@@ -13,7 +13,7 @@ public class HelloWorldController {
 	@RequestMapping("/hello")
 	public ModelAndView showMessage(@RequestParam(value = "name", required = false, defaultValue="World") String name)
 	{
-		System.out.println("In Controller");
+		System.out.println("In Hello Controller");
 		
 		ModelAndView mv = new ModelAndView("helloWorld");
 		mv.addObject("message", message);
