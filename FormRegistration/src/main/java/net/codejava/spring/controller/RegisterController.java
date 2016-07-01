@@ -26,7 +26,7 @@ public class RegisterController {
 		if(result.hasErrors()){
 			return "Registration";
 		}else{
-			System.out.println("User values is : " + user);
+			System.out.println("User values : " + user);
 			return "RegistrationSuccess";
 		}		
 	}
